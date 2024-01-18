@@ -1,0 +1,111 @@
+body {
+    /* Set background properties */
+    background-image: url('../images/5.jpg'); /* Replace 'path/to/your/image.jpg' */
+    background-size:cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar {
+    background-color:rgba(255, 233, 201, 0.2);
+    /* Add other styles for the header */
+    font-size: 20px;
+} 
+.navbar-brand {
+    font-family: Graphique Pro;
+    font-weight: bold;
+   
+}
+.navbar .navbar-brand {
+    
+    color:  #B20710;
+    font-size: 30px;
+    padding: 0;
+
+    
+}
+.l-page-color {
+    min-height: 300px;
+    background-color: rgba(255, 233, 201, 0.7);
+    border-radius: 10px;
+    margin-top: 100px;;
+}
+
+/* Increase the font size of the toggle button text */
+.navbar label.btn-toggle {
+    font-size: 18px !important; /* Add !important to ensure it takes precedence */
+}
+#firstQuestionJ {
+    min-width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 233, 201, 0.7);
+    margin-top: 100px;
+    display: none;
+    
+}
+#secondQuestionJ {
+    min-width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 233, 201, 0.7);
+    margin-top: 100px;
+    display: none;
+}
+/* this class is added to cards in question2 section to try and fit 5 cards into 12 units/didn't work */
+.customCard2Q {
+    margin-left: 100px;
+}
+#thirdQuestionJ {
+    min-width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 233, 201, 0.7);
+    margin-top: 100px;
+    display: none;
+
+}
+.customRange {
+    margin-top: 80px;
+    
+}
+input.customRangeSlider {
+    padding-left: 50px;
+    padding-right: 50px;;
+}
+#fourthQuestionJ {
+     min-width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 233, 201, 0.7);
+    margin-top: 100px;
+    display: none;
+}
+#fiveQuestionJ {
+    min-width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 233, 201, 0.7);
+    margin-top: 100px;
+    display: block;
+}
+button.btn {
+    width: 206px;
+    height: 80px;
+    margin-top: 70px;;
+    margin-left: 5px;
+}
+#containerSide {
+    margin: auto;
+}
+
+footer {
+    background-color: rgba(255, 233, 201, 0.2);
+    color: white;
+    font-weight: bold;
+}
+#landingContainer {
+    display: none;
+}
