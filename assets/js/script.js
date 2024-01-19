@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Get references to the buttons
+    // Get references to the buttons and the front card
     const startButton = $('#startButton');
     const nextButton1 = $('#nextButton1');
     const nextButton2 = $('#nextButton2');
@@ -7,6 +7,10 @@ $(document).ready(function () {
     const nextButton4 = $('#nextButton4');
     const nextButton5 = $('#nextButton5');
     const toggleModeButton = $('#btn-check-outlined');
+    const happyButton = $('#happy');
+    const neutralButton = $('#neutral');
+    const sadButton = $('#sad');
+    const frontCard = $('#resultFront');
 
     // Add click event handlers to the buttons
     startButton.click(function () {
@@ -43,6 +47,19 @@ $(document).ready(function () {
     toggleModeButton.click(function () {
         toggleLightDarkMode();
     });
+     // for test purpose
+    // Add click event handlers to the mood buttons
+    happyButton.click(function () {
+        updateFrontCardContent('Happy content');
+    });
+     // for test purpose
+    neutralButton.click(function () {
+        updateFrontCardContent('Neutral content');
+    });
+     // for test purpose
+    sadButton.click(function () {
+        updateFrontCardContent('Sad content');
+    });
 
     // Function to hide a container by ID
     function hideContainer(containerId) {
@@ -59,10 +76,14 @@ $(document).ready(function () {
         $('.' + containerClass).show();
     }
 
-     // Function to toggle light/dark mode
-     // Add more classes or elements in css using element.dark-mode and then update in this function
-     
-     function toggleLightDarkMode() {
+    // Function to toggle light/dark mode
+    function toggleLightDarkMode() {
         $('body, .navbar, footer').toggleClass('dark-mode');
+    }
+     // for test purpose
+    // Function to update the content of the front card
+    function updateFrontCardContent(content) {
+        frontCard.find('.card-title').text(content);
+        frontCard.find('.card-text').text('Additional content based on the mood.');
     }
 });
