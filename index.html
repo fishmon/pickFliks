@@ -41,13 +41,13 @@
 
     <!--  -->
     <div class="container flex-grow-1" id="containerSide">
-        <!-- Landing jumbo-->
+        <!-- Landing first section jumbo-->
         <div class="jumbotron text-center l-page-color " id="landingContainer">
             <h1 class="display-4">Howdy!</h1>
             <p class="lead">Welcome to our website. We know you're bored and lazy, otherwise you'd be googling for movie sugestions.</p>
             <!-- <hr class="my-4"> --> <!--This adds a line in the landing container separating text-->
             <p>Follow the instructions, respond to questions and when ready, press the big button bellow..</p>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button">Start</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="startButton">Start</a>
         </div>
 
         <!-- First question jumbo-->
@@ -94,7 +94,7 @@
                 </div>
                 
             </div>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button">Start</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton1">Start</a>
           </div>
           <!-- Second question Container-->
           <div class="jumbotron text-center " id="secondQuestionJ">
@@ -162,7 +162,7 @@
                 </div>
                 
             </div>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button">Next</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton2">Next</a>
           </div>
           <!-- Third question section slider -->
           <div class="jumbotron text-center " id="thirdQuestionJ">
@@ -177,7 +177,7 @@
             <input type="range" class="form-range" id="customRange1"> -->
 
            
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button">Next</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton3">Next</a>
           </div>
           <!--4rd Question section Awards or people's choice-->
 
@@ -212,12 +212,129 @@
            
 
            
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button">Next</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton4">Next</a>
           </div>
 
 
           
     </div>
+    <!--5th question section -->
+    <div class="jumbotron text-center " id="fiveQuestionJ">
+        <h1 class="display-4">5th question</h1>
+        <p class="lead">What category do you like? </p>
+        <!-- <hr class="my-4"> -->
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat1
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat2
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat3
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat4
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                   cat5
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat6
+                  </button>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat7
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat8
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat9
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat10
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat11
+                  </button>
+                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
+                    cat12
+                  </button>
+                
+            </div>
+        </div>
+       
+       
+
+       
+        <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton5">show results</a>
+      </div>
+
+      <!-- flip card section-->
+
+      <div class="flip-container" id="resultsContainer">
+        <div class="flipper">
+          <div class="front">
+            <div class="container mt-5" >
+                <div class="card m-2">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="back">
+            <div class="card-group">
+                <div class="card m-2">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card m-2">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card m-2">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      
+
+
+
     </div>
 
     <!-- Footer Section -->
@@ -233,7 +350,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <!--custom JavaScript file -->
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
