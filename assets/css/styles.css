@@ -86,7 +86,7 @@ input.customRangeSlider {
     margin-top: 100px;
     display: none;
 }
-#fiveQuestionJ {
+/* #fiveQuestionJ {
     min-width: 700px;
     min-height: 400px;
     border-radius: 10px;
@@ -99,7 +99,7 @@ button.btn {
     height: 80px;
     margin-top: 70px;;
     margin-left: 5px;
-}
+} */
 #containerSide {
     margin: auto;
 }

@@ -6,7 +6,7 @@ $(document).ready(function () {
     const nextButton2 = $('#nextButton2');
     const nextButton3 = $('#nextButton3');
     const nextButton4 = $('#nextButton4');
-    const nextButton5 = $('#nextButton5');
+    // const nextButton5 = $('#nextButton5');
     // the button on the navbar, that toggles the light/dark mode
     const toggleModeButton = $('#btn-check-outlined');
     // first question container buttons for happy, neutral, sad
@@ -15,6 +15,57 @@ $(document).ready(function () {
     const sadButton = $('#sad');
     //this is the entire flip container, front and back
     const frontCard = $('#resultFront');
+
+    const moodCategories = {
+        happy: [
+            { id: 35, name: 'Comedy' },
+            { id: 10751, name: 'Family' },
+            { id: 16, name: 'Animation' },
+            { id: 12, name: 'Adventure' },
+            { id: 10749, name: 'Romance' },
+            { id: 10402, name: 'Music' }
+        ],
+        neutral: [
+            { id: 28, name: 'Action' },
+            { id: 12, name: 'Adventure' },
+            { id: 35, name: 'Comedy' },
+            { id: 18, name: 'Drama' },
+            { id: 10751, name: 'Family' },
+            { id: 16, name: 'Animation' },
+            { id: 80, name: 'Crime' },
+            { id: 99, name: 'Documentary' },
+            { id: 9648, name: 'Mystery' },
+            { id: 10749, name: 'Romance' },
+            { id: 878, name: 'Science Fiction' },
+            { id: 53, name: 'Thriller' },
+            { id: 10752, name: 'War' }
+        ],
+        sad: [
+            { id: 18, name: 'Drama' },
+            { id: 10749, name: 'Romance' },
+            { id: 99, name: 'Documentary' },
+            { id: 10752, name: 'War' },
+            { id: 36, name: 'History' },
+            { id: 9648, name: 'Mystery' },
+            { id: 28, name: 'Action' },
+            { id: 12, name: 'Adventure' },
+            { id: 35, name: 'Comedy' },
+            { id: 80, name: 'Crime' },
+            { id: 16, name: 'Animation' },
+            { id: 10751, name: 'Family' }
+        ]
+    };
+
+    const moodCategories = {
+        happy: [35, 10751, 16, 12, 10749, 10402],
+        neutral: [28, 12, 35, 18, 10751, 16, 80, 99, 9648, 10749, 878, 53, 10752],
+        sad: [18, 10749, 99, 10752, 36, 9648, 28, 12, 35, 80, 16, 10751]
+    };
+
+
+
+
+
 
     // Add click event handlers to the buttons
     //Moves from the landing to the first Q
@@ -41,13 +92,13 @@ $(document).ready(function () {
    // moves from the 4th Q to the 5th Q
     nextButton4.click(function () {
         hideContainer('fourthQuestionJ');
-        showContainer('fiveQuestionJ');
-    });
-   //moves from the 5th Q to the flip card, results container
-    nextButton5.click(function () {
-        hideContainer('fiveQuestionJ');
         showContainerByClass('flip-container');
     });
+   //moves from the 5th Q to the flip card, results container
+    // nextButton5.click(function () {
+    //     hideContainer('fiveQuestionJ');
+    //     showContainerByClass('flip-container');
+    // });
 
     // click event handler to the toggle button
     toggleModeButton.click(function () {
