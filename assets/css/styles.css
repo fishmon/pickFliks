@@ -178,3 +178,11 @@ footer {
 
 
 /* this is for the toggle light/dark mode  use class dark-mode */
+.dark-mode .navbar {
+    background-color: rgba(174, 111, 17, 0.2);
+
+}
+.dark-mode footer {
+    background-color: rgba(174, 111, 17, 0.2);
+
+}

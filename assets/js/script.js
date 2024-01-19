@@ -6,21 +6,22 @@ $(document).ready(function () {
     const nextButton3 = $('#nextButton3');
     const nextButton4 = $('#nextButton4');
     const nextButton5 = $('#nextButton5');
+    const toggleModeButton = $('#btn-check-outlined');
 
-    // click event handlers to the buttons
+    // Add click event handlers to the buttons
     startButton.click(function () {
-      hideContainer('landingContainer');
-      showContainer('firstQuestionJ');
+        hideContainer('landingContainer');
+        showContainer('firstQuestionJ');
     });
-  
+
     nextButton1.click(function () {
-      hideContainer('firstQuestionJ');
-      showContainer('secondQuestionJ');
+        hideContainer('firstQuestionJ');
+        showContainer('secondQuestionJ');
     });
-  
+
     nextButton2.click(function () {
-      hideContainer('secondQuestionJ');
-      showContainer('thirdQuestionJ');
+        hideContainer('secondQuestionJ');
+        showContainer('thirdQuestionJ');
     });
 
     nextButton3.click(function () {
@@ -37,19 +38,31 @@ $(document).ready(function () {
         hideContainer('fiveQuestionJ');
         showContainerByClass('flip-container');
     });
-    
+
+    // Add click event handler to the toggle button
+    toggleModeButton.click(function () {
+        toggleLightDarkMode();
+    });
+
     // Function to hide a container by ID
     function hideContainer(containerId) {
-      $('#' + containerId).hide();
+        $('#' + containerId).hide();
     }
-  
+
     // Function to show a container by ID
     function showContainer(containerId) {
-      $('#' + containerId).show();
+        $('#' + containerId).show();
     }
 
     // Function to show a container by class
     function showContainerByClass(containerClass) {
-      $('.' + containerClass).show();
+        $('.' + containerClass).show();
+    }
+
+     // Function to toggle light/dark mode
+     // Add more classes or elements in css using element.dark-mode and then update in this function
+     
+     function toggleLightDarkMode() {
+        $('body, .navbar, footer').toggleClass('dark-mode');
     }
 });
