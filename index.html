@@ -6,7 +6,7 @@
     <title>pickFlix</title>
 
     <!-- CSS-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/assets/css/styles.css">
 
     <!-- Bootstrap CSS -  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,10 +20,10 @@
     <header>
         <nav class="navbar navbar-expand-lg "> <!-- add navbar-light bg-light  to class to use boostrap-->
             <div class="container-fluid ps-3 pe-3">
-                <a class="navbar-brand ms-4 me-5 logo-color" href="#">PICKFLIX</a>
-                <button class="navbar-toggler ms-auto me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand ms-4 me-5" href="#">PICKFLIX</a>
+                <!-- <button class="navbar-toggler ms-auto me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -42,7 +42,7 @@
             </div>
         </nav>
     </header>
-
+<div class="main-bg">
     <!--  -->
     <div class="container flex-grow-1" id="containerSide">
         <!-- Landing first section jumbo-->
@@ -51,7 +51,13 @@
             <p class="lead">Welcome to our website. We know you're bored and lazy, otherwise you'd be googling for movie sugestions.</p>
             <!-- <hr class="my-4"> --> <!--This adds a line in the landing container separating text-->
             <p>Follow the instructions, respond to questions and when ready, press the big button bellow..</p>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="startButton">Start</a>
+            <a href="#" class="animated-button1" id="startButton">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Start Now
+            </a>
         </div>
 
         <!-- First question jumbo-->
@@ -63,33 +69,33 @@
             <div class="container">   <!--this adds padding arround cards-->
                 <div class="row">   <!--This makes a row of cards-->
                     <div class="col-4">   <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                        <div class="card">     <!--This is the card-->
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card first-q-card">     <!--This is the card-->
+                            <img src="assets/css/images/kisspng-computer-icons-smiley-emoticon-happiness-clip-art-flat-faces-5b45a5b43521f2.9547669815312910602176.png" class="card-img-top mood-img happy-img" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Happy</h5>
-                              <p class="card-text">Choose this if you are in a good mood.</p>
+                              <!-- <h5 class="card-title">Happy</h5> -->
+                              <!-- <p class="card-text">Choose this if you are in a good mood.</p> -->
                               <a href="#" class="btn btn-primary" id="happy">Choose</a>
                             </div>
                           </div>
 
                     </div>
                     <div class="col-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card first-q-card">
+                            <img src="assets/css/images/neutral.webp" class="card-img-top mood-img" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Neutral</h5>
-                              <p class="card-text">Choose this if you couldn't care less.</p>
+                              <!-- <h5 class="card-title">Neutral</h5>
+                              <p class="card-text">Choose this if you couldn't care less.</p> -->
                               <a href="#" class="btn btn-primary" id="neutral">Choose</a>
                             </div>
                           </div>
                         
                     </div>
                     <div class="col-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card first-q-card">
+                            <img src="assets/css/images/kisspng-symbol-computer-icons-arrow-sad-emoji-5ac49d5631cd61.443182081522834774204.png" class="card-img-top mood-img" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Sad</h5>
-                              <p class="card-text">Choose this if you are sad.</p>
+                              <!-- <h5 class="card-title">Sad</h5>
+                              <p class="card-text">Choose this if you are sad.</p> -->
                               <a href="#" class="btn btn-primary" id="sad">Choose</a>
                             </div>
                           </div>
@@ -98,83 +104,82 @@
                 </div>
                 
             </div>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton1">Start</a>
+            <a class="btn-next" href="#" role="button" id="nextButton1">Next</a>
           </div>
           <!-- Second question Container-->
           <div class="jumbotron text-center " id="secondQuestionJ">
             <h1 class="display-4">2nd Question</h1>
-            <p class="lead">What is the ocasion </p>
+            <p class="lead">What is the occasion? </p>
             <hr class="my-4">
 
-            <div class="container">   <!--this adds padding arround cards-->
-                <div class="row">   <!--This makes a row of cards-->
-                    <div class="col-2">   <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                        <div class="card customCard2Q">     <!--This is the card-->
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Familly</h5>
-                              <p class="card-text">Choose this if you are watching with the familly.</p>
-                              <a href="#" class="btn btn-primary">Choose</a>
-                            </div>
-                          </div>
-
+            <div class="container"> <!--this adds padding arround cards-->
+              <div class="row"> <!--This makes a row of cards-->
+                <div class="col-3"> <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
+                  <div class="card customCard2Q m-auto"> <!--This is the card-->
+                    <img src="assets/css/images/family.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Familly</h5>
+                      <p class="card-text">Choose this if you are watching with the familly.</p>
+                      <a href="#" class="btn btn-primary">Choose</a>
                     </div>
-                    <div class="col-2">
-                        <div class="card customCard2Q">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Alone</h5>
-                              <p class="card-text">Choose this if you are watching it alone.</p>
-                              <a href="#" class="btn btn-primary">Choose</a>
-                            </div>
-                          </div>
-                        
-                    </div>
-                    <div class="col-2">
-                        <div class="card customCard2Q">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Date night</h5>
-                              <p class="card-text">Choose this if you are watching with your date.</p>
-                              <a href="#" class="btn btn-primary">Choose</a>
-                            </div>
-                          </div>
-                        
-                    </div>
-                    <div class="col-2">
-                        <div class="card customCard2Q">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Date night</h5>
-                              <p class="card-text">Choose this if you are watching with your date.</p>
-                              <a href="#" class="btn btn-primary">Choose</a>
-                            </div>
-                          </div>
-                        
-                    </div>
-                    <div class="col-2">
-                        <div class="card customCard2Q">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Date night</h5>
-                              <p class="card-text">Choose this if you are watching with your date.</p>
-                              <a href="#" class="btn btn-primary">Choose</a>
-                            </div>
-                          </div>
-                        
-                    </div>
+                  </div>
+    
                 </div>
-                
+                <div class="col-3">
+                  <div class="card customCard2Q m-auto">
+                    <img src="assets/css/images/alone.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Alone</h5>
+                      <p class="card-text">Choose this if you are watching it alone.</p>
+                      <a href="#" class="btn btn-primary">Choose</a>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="col-3">
+                  <div class="card customCard2Q m-auto">
+                    <img src="assets/css/images/datenight.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Date night</h5>
+                      <p class="card-text">Choose this if you are watching with your date.</p>
+                      <a href="#" class="btn btn-primary">Choose</a>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="col-3">
+                  <div class="card customCard2Q m-auto">
+                    <img src="assets/css/images/nightWithFriends.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie night with friends</h5>
+                      <p class="card-text">Choose this if you are watching with your friends.</p>
+                      <a href="#" class="btn btn-primary">Choose</a>
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </div>
+    
             </div>
-            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton2">Next</a>
+            <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton2">Next</a>  
+          </div>
+          
           </div>
           <!-- Third question section slider -->
           <div class="jumbotron text-center " id="thirdQuestionJ">
             <h1 class="display-4">3rd question</h1>
-            <p class="lead">What old do you want the movies to be?</p>
+            <p class="lead">How old do you want the movies to be?</p>
             <!-- <hr class="my-4"> -->
-            <label for="customRange3" class="form-label customRange">Move the slider to the desired decade !</label>
-            <input type="range" class="form-range customRangeSlider" min="0" max="5" step="1.0" id="customRange3">
+            <label for="customRange3" class="form-label customRange">Move the slider to the desired decade!</label>
+        <input type="range" class="form-range customRangeSlider" min="0" max="4" step="1.0" id="customRange3">
+        <div class="range-box">
+          <span class="range-80">80'</span>
+          <span class="range-90">90'</span>
+          <span class="range-00">2000</span>
+          <span class="range-10">2010</span>
+          <span class="range-current">current</span>
+        </div>
             <!--This next slider is smoother-->
 
             <!-- <label for="customRange1" class="form-label">Example range</label>
@@ -223,62 +228,7 @@
           
     </div>
     <!--5th question section -->
-    <div class="jumbotron text-center " id="fiveQuestionJ">
-        <h1 class="display-4">5th question</h1>
-        <p class="lead">What category do you like? </p>
-        <!-- <hr class="my-4"> -->
-        <div class="container">
-            <div class="row">
-                <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat1
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat2
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat3
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat4
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                   cat5
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat6
-                  </button>
-                
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat7
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat8
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat9
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat10
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat11
-                  </button>
-                  <button type="button" class="btn btn-primary col-2 " data-toggle="button" aria-pressed="false" autocomplete="off">
-                    cat12
-                  </button>
-                
-            </div>
-        </div>
-       
-       
-
-       
-        <a class="btn btn-primary btn-lg m-5" href="#" role="button" id="nextButton5">show results</a>
-      </div>
+    
 
       <!-- flip card section-->
 
@@ -338,9 +288,19 @@
       
 
 
-
     </div>
-
+    </div>
+    <div class="container container-about text-light m-5 d-none" id="about-section">
+      <h3 class="about-heading">About us</h3>
+      <hr>
+      <p class="about-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa sint officia dolore illum
+        ipsa, accusantium quis modi esse, quod odit nulla. Cumque, atque recusandae adipisci quaerat mollitia quam harum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis blanditiis sint dicta, accusantium corrupti
+        officia laudantium. Blanditiis, molestias magnam maxime suscipit nisi quasi vel, nemo minus officiis veniam
+        accusamus soluta?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore commodi similique ex? Aliquam
+        ipsam ratione quod praesentium consequuntur. Ipsum reiciendis dolorum molestias minima voluptatem, veniam eos.
+        Repellendus ullam ex voluptates!</p>
+    </div>
     <!-- Footer Section -->
     <footer class="mt-auto py-3 "> <!-- add class bg-light for light bg color-->
         <div class="container text-center">
