@@ -15,6 +15,26 @@ $(document).ready(function () {
     const sadButton = $('#sad');
     //this is the entire flip container, front and back
     const frontCard = $('#resultFront');
+    
+    // Second question container buttons for familly, alone, dateNight, friends, kids
+    const famillyButton = $('#familly');
+    const aloneButton = $('#alone');
+    const dateNightButton = $('#dateNight');
+    const friendsButton = $('#friends');
+    const kidsButton = $('#kids');
+
+    // Third question slider
+    const customRange3 = $('#customRange3');
+
+    // Fourth question container buttons for critic, people
+    const criticButton = $('#critic');
+    const peopleButton = $('#people');
+
+    // Flip card section
+    const resultsContainer = $('#resultsContainer');
+    const flipper = $('.flipper');
+    const backCardGroup = $('.card-group');
+
 
     // const moodCategories = {
     //     happy: [
