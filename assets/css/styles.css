@@ -21,6 +21,16 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat; /* Do not repeat the image */
 }
 
+/* apply blur to the background */
+
+.blur {
+  background-image: url('../images/5-blur.jpg'); /* Replace 'path/to/your/image.jpg' */
+
+}
+
+/* Reset blur on containers */
+
+
 .navbar {
     background-color:rgba(255, 233, 201, 0.2);
     /* Add other styles for the header */
@@ -316,7 +326,7 @@ footer {
     height: 600px;
     position: relative;
     border-radius: 10px;
-    background-color: rgba(255, 233, 201, 0.7);
+    /* background-color: rgba(255, 233, 201, 0); */
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -381,3 +391,9 @@ footer {
     background-color: rgba(174, 111, 17, 0.2);
 
 }
+/* blur background 
+/* .blurred-bg {
+  filter: blur(5px); /* You can adjust the blur intensity 
+  transition: filter 0.5s ease-in-out; /* Add a smooth transition effect 
+} */
+
