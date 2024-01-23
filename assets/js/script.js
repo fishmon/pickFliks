@@ -114,6 +114,7 @@ $(document).ready(function () {
         $("#startButton").on("click", function () {
             $(".main-bg").addClass("blur");
         });
+        
          // Reload the page when the brand text is clicked
     $('#brandText').click(function() {
         location.reload();
@@ -188,7 +189,7 @@ $(document).ready(function () {
 
     // Function to toggle light/dark mode
     function toggleLightDarkMode() {
-        $('body, .navbar, footer').toggleClass('dark-mode');
+        $('body, .navbar, footer, .main-bg').toggleClass('dark-mode');
     }
      // for test purpose
     // Function to update the content of the front card
