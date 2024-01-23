@@ -5,7 +5,7 @@ $(document).ready(function () {
     const nextButton1 = $('#nextButton1');
     const nextButton2 = $('#nextButton2');
     const nextButton3 = $('#nextButton3');
-    const nextButton4 = $('#nextButton4');
+    // const nextButton4 = $('#nextButton4');
     // const nextButton5 = $('#nextButton5');
     // the button on the navbar, that toggles the light/dark mode
     const toggleModeButton = $('#btn-check-outlined');
@@ -15,26 +15,28 @@ $(document).ready(function () {
     const sadButton = $('#sad');
     //this is the entire flip container, front and back
     const frontCard = $('#resultFront');
-    
+
     // Second question container buttons for familly, alone, dateNight, friends, kids
     const famillyButton = $('#familly');
     const aloneButton = $('#alone');
     const dateNightButton = $('#dateNight');
     const friendsButton = $('#friends');
-    const kidsButton = $('#kids');
+    // const kidsButton = $('#kids');
 
     // Third question slider
     const customRange3 = $('#customRange3');
 
-    // Fourth question container buttons for critic, people
-    const criticButton = $('#critic');
-    const peopleButton = $('#people');
+    // // Fourth question container buttons for critic, people
+    // const criticButton = $('#critic');
+    // const peopleButton = $('#people');
 
     // Flip card section
     const resultsContainer = $('#resultsContainer');
     const flipper = $('.flipper');
     const backCardGroup = $('.card-group');
-
+    //about me sections
+    const $toggleAboutButton = $('#toggleAboutButton');
+    const $aboutMeSection = $('#about-section');
 
     // const moodCategories = {
     //     happy: [
@@ -80,14 +82,35 @@ $(document).ready(function () {
         neutral: [28, 12, 35, 18, 10751, 16, 80, 99, 9648, 10749, 878, 53, 10752],
         sad: [18, 10749, 99, 10752, 36, 9648, 28, 12, 35, 80, 16, 10751]
     };
+
+    const mpaaCategories = {
+        familly: 'PG',
+        alone: 'PG-13',
+        dateNight: 'PG-13',
+        friends: 'R',
+        // kids: 'G'
+    };
+
+    const decadeCategories = {
+        0: '1970s',
+        1: '1980s',
+        2: '1990s',
+        3: '2000s',
+        4: '2010s',
+        5: '2020s',  
+    };
+    const tmdbApiKey = 'a45ae1cd50956721de8559fcdd0f36ac';
+
+
     
 
-const tmdbApiKey = 'a45ae1cd50956721de8559fcdd0f36ac';
+    // Add a click event listener to the button and togle visibilty
+    $toggleAboutButton.on('click', function() {
+        // Toggle the visibility of the about me section
+        $aboutMeSection.toggle();
+    });
 
-
-
-
-
+    
     // Add click event handlers to the buttons
     //Moves from the landing to the first Q
     startButton.click(function () {
@@ -108,13 +131,13 @@ const tmdbApiKey = 'a45ae1cd50956721de8559fcdd0f36ac';
     // moves from the 3rd Q to the 4th Q
     nextButton3.click(function () {
         hideContainer('thirdQuestionJ');
-        showContainer('fourthQuestionJ');
-    });
-   // moves from the 4th Q to the 5th Q
-    nextButton4.click(function () {
-        hideContainer('fourthQuestionJ');
         showContainerByClass('flip-container');
     });
+   // moves from the 4th Q to the 5th Q
+    // nextButton4.click(function () {
+    //     hideContainer('fourthQuestionJ');
+    //     showContainerByClass('flip-container');
+    // });
    //moves from the 5th Q to the flip card, results container
     // nextButton5.click(function () {
     //     hideContainer('fiveQuestionJ');
