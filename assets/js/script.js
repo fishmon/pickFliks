@@ -109,6 +109,11 @@ $(document).ready(function () {
         // Toggle the visibility of the about me section
         $aboutMeSection.toggle();
     });
+    
+    //adds blur image 
+        $("#startButton").on("click", function () {
+            $(".main-bg").addClass("blur");
+        });
 
     
     // Add click event handlers to the buttons
