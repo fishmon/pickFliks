@@ -114,6 +114,10 @@ $(document).ready(function () {
         $("#startButton").on("click", function () {
             $(".main-bg").addClass("blur");
         });
+         // Reload the page when the brand text is clicked
+    $('#brandText').click(function() {
+        location.reload();
+      });
 
     
     // Add click event handlers to the buttons
