@@ -38,3 +38,5 @@ const options = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNjQ3NTJiN2VmNWViZWVjNTZhODk1ZDM3ZjM2OTc0MiIsInN1YiI6IjY1YTk5MDRiNjhhZmQ2MDEzNjUwODIzMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RVzwTh-8yKN6_Fht1plTu5owNKT1EJR25B_QEzhNiuc'
     }
 };
+
+const posterUrl = "https://image.tmdb.org/t/p/original"

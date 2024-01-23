@@ -75,7 +75,7 @@
                             <div class="card-body">
                               <!-- <h5 class="card-title">Happy</h5> -->
                               <!-- <p class="card-text">Choose this if you are in a good mood.</p> -->
-                              <a href="#" class="btn btn-primary" id="happy">Choose</a>
+                              <a href="#" class="btn btn-primary mood-buttons" id="happy">Choose</a>
                             </div>
                           </div>
 
@@ -86,7 +86,7 @@
                             <div class="card-body">
                               <!-- <h5 class="card-title">Neutral</h5>
                               <p class="card-text">Choose this if you couldn't care less.</p> -->
-                              <a href="#" class="btn btn-primary" id="neutral">Choose</a>
+                              <a href="#" class="btn btn-primary mood-buttons" id="neutral">Choose</a>
                             </div>
                           </div>
                         
@@ -97,7 +97,7 @@
                             <div class="card-body">
                               <!-- <h5 class="card-title">Sad</h5>
                               <p class="card-text">Choose this if you are sad.</p> -->
-                              <a href="#" class="btn btn-primary" id="sad">Choose</a>
+                              <a href="#" class="btn btn-primary mood-buttons" id="sad">Choose</a>
                             </div>
                           </div>
                         
@@ -126,7 +126,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Familly</h5>
                       <p class="card-text">Choose this if you are watching with the familly.</p>
-                      <a href="#" class="btn btn-primary" id="familly">Choose</a>
+                      <a href="#" class="btn btn-primary occasion-buttons" id="familly">Choose</a>
                     </div>
                   </div>
     
@@ -137,7 +137,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Alone</h5>
                       <p class="card-text">Choose this if you are watching it alone.</p>
-                      <a href="#" class="btn btn-primary" id="alone">Choose</a>
+                      <a href="#" class="btn btn-primary occasion-buttons" id="alone">Choose</a>
                     </div>
                   </div>
     
@@ -148,7 +148,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Date night</h5>
                       <p class="card-text">Choose this if you are watching with your date.</p>
-                      <a href="#" class="btn btn-primary" id="dateNight">Choose</a>
+                      <a href="#" class="btn btn-primary occasion-buttons" id="dateNight">Choose</a>
                     </div>
                   </div>
     
@@ -159,7 +159,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Movie night with friends</h5>
                       <p class="card-text">Choose this if you are watching with your friends.</p>
-                      <a href="#" class="btn btn-primary" id="friends">Choose</a>
+                      <a href="#" class="btn btn-primary occasion-buttons" id="friends">Choose</a>
                     </div>
                   </div>
     
@@ -301,63 +301,46 @@
       </div>
     -->
       <!-- flip card section-->
-
       <div class="flip-container" id="resultsContainer">
         <div class="flipper">
           <div class="front">
+  
             <div class="card mb-3" style="max-width: 1000px; height: 500px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="./assets/images/background3.jpg" class="img-fluid rounded-start" alt="...">
+                  <img src="./assets/images/background3.jpg" class="img-fluid rounded-start poster1" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title title1">Card title</h5>
+                    <p class="card-text overview1"></p>
+                    <br>
+                    <p class="year1"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+  
           <div class="back">
-            <div class="card-group">
-                <div class="card m-2">
-                  <img src="./assets/images/background1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
+            <div class="card mb-3" style="max-width: 1000px; height: 500px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="" class="img-fluid rounded-start poster2" alt="...">
                 </div>
-                <div class="card m-2">
-                  <img src="./assets/images/background1.jpg" class="card-img-top" alt="...">
+                <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card m-2">
-                  <img src="./assets/images/background1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    <h5 class="card-title title2"></h5>
+                    <p class="card-text overview2"></p>
+                    <br>
+                    <p class="year2"></p>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-          
         </div>
       </div>
-      
 
 
     </div>
@@ -388,6 +371,7 @@
     <!--custom JavaScript file -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/infoApi.js"></script>
+    <script src="./assets/js/functions.js"></script>
 
 
 </body>
