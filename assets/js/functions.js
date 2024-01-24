@@ -68,8 +68,19 @@ function populateCard2(data) {
     $('.poster2').attr('src', posterUrl + data.poster_path);
     $('.title2').text(data.original_title);
     $('.overview2').text(data.overview);
-    $('.year2').text("Release date: " + data.release_date);
+    $('.year2').text("Release date: "+data.release_date);
     omdbRottenTomatoes(data.original_title)
+}
+function omdbRottenTomatoes(title) {
+    const omdbUrl = `https://www.omdbapi.com/?t=${title}&apikey=trilogy`
+    fetch(omdbUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            $('.tomatoes-score').text(" " + data.Ratings[1].Value)
+        });
+   
 }
 function omdbRottenTomatoes(title) {
     const omdbUrl = `https://www.omdbapi.com/?t=${title}&apikey=trilogy`
