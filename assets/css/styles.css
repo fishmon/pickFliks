@@ -432,3 +432,153 @@ footer {
 
 }
 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #firstQuestionJ,
+  #secondQuestionJ,
+  #thirdQuestionJ {
+    min-width: 90%; /* Adjust the minimum width for smaller screens */
+    margin-top: 150px; /* Adjust margin-top for smaller screens */
+  }
+
+  .container {
+    padding: 0 15px; /* Adjust container padding for smaller screens */
+  }
+
+  .jumbotron {
+    padding: 30px; /* Adjust jumbotron padding for smaller screens */
+  }
+
+  .range-box {
+    flex-direction: column; /* Adjust the flex direction for the range box on smaller screens */
+  }
+  .front{
+    max-width: 700px;
+    max-height: 300px;
+    font-size: 16px;
+    margin-top: 150px;
+    /* color: white; */
+  }
+  .back{
+    max-width: 700px;
+    max-height: 300px;
+    font-size: 16px;
+    margin-top: 150px;
+    /* color: white; */
+
+  }
+  .flip-container {
+    perspective:  1500px;
+    width: 700px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    /* background-color: rgba(255, 233, 201, 0); */
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    /* color: white; */
+  }
+  .title1, .title2, .overview1, .overview2, .year1, .year2 {
+    /* color: white !important; */
+    font-size: 16px;
+  }
+  #customRange3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .range-box {
+    width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+}
+
+@media (max-width: 575px) {
+  #firstQuestionJ,
+  #secondQuestionJ,
+  #thirdQuestionJ {
+    min-width: 80%; /* Adjust the minimum width for even smaller screens */
+    font-size: 10px;
+    margin-top: 50px; /* Adjust margin-top for smaller screens */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    padding: 0 11px; /* Adjust container padding for smaller screens */
+  }
+
+  .jumbotron {
+    padding: 20px; /* Adjust jumbotron padding for smaller screens */
+  }
+
+  .range-box {
+    width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+  #customRange3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .mood-buttons {
+    max-width: 95%;
+    font-size: 14px !important;
+
+  }
+  .card-body {
+    padding: 2px !important;
+    height: 150px !important;
+
+  }
+  .mood-img{
+    margin-bottom: 30px;
+  }
+  .occasion-buttons {
+    max-width: 95%;
+    font-size: 14px !important;
+  }
+
+  .front{
+    max-width: 350px;
+    max-height: 350px;
+    font-size: 12px;
+    margin-top: 100px;
+    color: white;
+  }
+  .back{
+    max-width: 350px;
+    max-height: 350px;
+    font-size: 12px;
+    margin-top: 100px;
+    color: white;
+
+  }
+  .flip-container {
+    perspective:  1500px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    /* background-color: rgba(255, 233, 201, 0); */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    color: white;
+  }
+  .title1, .title2, .overview1, .overview2, .year1, .year2 {
+    color: white !important;
+  }
+
+}
+
