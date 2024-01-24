@@ -7,14 +7,14 @@ let movieTitle1;
 let movieTitle2;
 
 // get mood input
-$('.mood-buttons').on('click', function () {
-    // Clear the content of all mood-cards
-    $('.mood-buttons').html('Choose');
-    // Set the content of the clicked card
-    $(this).html('Selected');
-    moodInput = $(this).attr('id')
-});
 
+$('.mood-buttons').on('click', function(){    
+     // Clear the content of all mood-cards
+         $('.mood-buttons').css('border', 'none');
+      // Set the content of the clicked card
+      $(this).css('border', '1px solid black');
+      moodInput = $(this).attr('id')});
+   
 //same method for occasion
 $('.occasion-buttons').on('click', function () {
     $('.occasion-buttons').html('Choose');
