@@ -1,5 +1,14 @@
+:root{
+  --main-bg-color: #ABA8A3;
+  --main-text-color: #070608;
+--warm-text-color: rgba(255, 233, 201, 0.7);
+--dark-bg-color: rgba(82, 74, 67, 0.7);
+--main-dark-red: #3D0B0B;
+--brand-color: #B20710;
+--main-dark-bg: rgba(233, 199, 199, 0.938);
+}
 body,html{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif!important;
     /* height: 100%; */
     
     -ms-overflow-style: none;  
@@ -27,12 +36,16 @@ body::-webkit-scrollbar {
   background-image: url('../images/5-blur.jpg'); /* Replace 'path/to/your/image.jpg' */
 
 }
-
+.dark-mode .blur{
+  background-image: url('../images/lightmode2-blur.jpg')!important;
+}
 /* Reset blur on containers */
-
+h1{
+  color: var(--main-dark-red)!important;
+}
 
 .navbar {
-    background-color:rgba(7, 4, 0, 0.075);
+    background-color:black;
     /* Add other styles for the header */
     font-size: 20px;
     position: fixed !important;
@@ -50,24 +63,73 @@ body::-webkit-scrollbar {
 }
 .navbar .navbar-brand {
     
-    color:  #B20710;
+  color:  var(--brand-color);
     font-size: 30px;
     padding: 0;
 
     
 }
+.navbar-brand:hover{
+  color:  var(--brand-color)!important;
+}
+.nav-link{
+  color: var(--main-bg-color)!important;
+}
+.toggler{
+  color: var(--main-dark-bg)!important;
+  border:1px solid var(--main-dark-bg)!important ;
+}
+.border{
+  border: 1px solid black;
+}
+.dark-mode .navbar {
+  background-color: #231603;
+
+}
+.dark-mode h1{
+  color: var(--main-text-color)!important;
+}
+.dark-mode .toggler{
+  background-color: var(--main-dark-bg)!important;
+  color: var(--main-dark-red)!important;
+}
+.dark-mode .jumbotron{
+background-color: var(--main-dark-bg);
+color: var(--main-text-color);
+}
+.dark-mode .card{
+  background-color: #fff!important;
+}
+.dark-mode .card:hover{
+  border: 1px solid black;
+}
+.dark-mode footer {
+  background-color: rgba(174, 111, 17, 0.2);
+
+}
 #toggleAboutButton {
   color: white;
 }
+.card{
+  background-color: white;
+  transition: all .3s;
+  height: 100%!important;
+}
+.card:hover{
+  border: 1px solid black;
+}
+.card-body{
+  flex: 0!important;
+}
 .jumbotron{
-    background-color: #42421a;
-    color: #070608;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.btn-next{
+/* .btn-next{
     width: 6em;
     height: 3em;
     background-color: #2B0808;
@@ -80,10 +142,10 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
 
-}
+} */
 .l-page-color {
     min-height: 300px;
-    background-color: rgba(255, 233, 201, 0.7);
+    /* background-color: rgba(255, 233, 201, 0.7); */
     border-radius: 10px;
     margin-top: 100px;;
 }
@@ -92,24 +154,36 @@ body::-webkit-scrollbar {
 .navbar label.btn-toggle {
     font-size: 18px !important; /* Add !important to ensure it takes precedence */
 }
+.occasion-link{
+  text-decoration: none;
+}
+.neutral-face{
+  max-width: 55%!important;
+}
+.next-button{
+  border: none!important;
+  border-radius: 0!important;
+  width: 150px;
+  margin: 2% 0;
+}
 #firstQuestionJ {
     min-width: 700px;
     min-height: 400px;
     border-radius: 10px;
-    background-color: #5f2323;
+    /* background-color: #5f2323; */
     margin-top: 100px;
     display: none;
-    color: white;
+    /* color: white; */
     
 }
 #secondQuestionJ {
     min-width: 700px;
     min-height: 400px;
     border-radius: 10px;
-    background-color: #5f2323;
+    /* background-color: #5f2323; */
     margin-top: 100px;
     display: none;
-    color: white;
+    /* color: white; */
 
 }
 /* this class is added to cards in question2 section to try and fit 5 cards into 12 units/didn't work */
@@ -120,12 +194,12 @@ body::-webkit-scrollbar {
     min-width: 700px;
     min-height: 400px;
     border-radius: 10px;
-    background-color: #5f2323;
+    /* background-color: #5f2323; */
     margin-top: 200px;
     display: none;
     margin-left: 50px;
     margin-right: 50px;
-    color: white;
+    /* color: white; */
 
 
 }
@@ -197,8 +271,8 @@ footer {
 #landingContainer {
     margin-top: 200px;
     display: block;
-    background-color: #5f2323;
-    color: white;
+    /* background-color: #5f2323;
+    color: white; */
 }
 .animated-button1 {
     
@@ -333,7 +407,7 @@ footer {
 .flip-container {
     perspective:  1500px;
     width: 1200px;
-    height: 600px;
+    height: 500px;
     position: relative;
     border-radius: 10px;
     /* background-color: rgba(255, 233, 201, 0); */
@@ -370,9 +444,15 @@ footer {
     font-weight: bold;
     color: white;
   }
-
+.flip-card{
+  background-color: white!important;
+}
+.flip-card:hover{
+  border: none;
+}
   .front {
-    background-color: #3498db;
+    background-color: var(--main-dark-red);
+    color: var(--warm-text-color)!important;
     border-radius: 10px;
    
 
@@ -384,7 +464,7 @@ footer {
   } */
 
   .back {
-    background-color: #2ecc71;
+    background-color: var(--main-bg-color);
     border-radius: 10px;
 
     transform: rotateY(180deg);
@@ -393,7 +473,7 @@ footer {
 
 
 /* this is for the toggle light/dark mode  use class dark-mode */
-.dark-mode .navbar {
+/* .dark-mode .navbar {
     background-color: rgba(233, 45, 45, 0.048);
 
 }
@@ -402,20 +482,20 @@ footer {
 .dark-mode footer {
   background-color: rgba(233, 45, 45, 0.048);
 
-}
+} */
 .dark-mode .main-bg {
   background-image: url('../images/lightmode2.jpg');
-  background-size:cover; /* Cover the entire viewport */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-size:cover; /* Cover the entire viewport 
+  background-position: center; /* Center the image 
+  background-repeat: no-repeat; /* Do not repeat the image 
   width: 100%;
-  height: 100vh;
+  height: 100vh; */
 }
-.dark-mode #landingContainer{
+ /* .dark-mode #landingContainer{
   background-color: rgba(233, 199, 199, 0.938);
-  color: rgb(10, 10, 10)
+  color: rgb(10, 10, 10);
 
-}
+}/*
 .dark-mode #firstQuestionJ {
   background-color: rgba(233, 199, 199, 0.938);
   color: rgb(10, 10, 10)
@@ -431,4 +511,36 @@ footer {
   color: rgb(10, 10, 10)
 
 }
+ */
+ .media-container{
+  display: none;
+ }
+ .media-row{
 
+  max-width: 400px;
+  background-color: white;
+ }
+ @media(max-width: 1000px){
+  .flipper{
+    display: none;
+  }
+  .media-container{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .poster1{
+    max-width: 200px;
+  }
+ }
+@media(max-width: 768px){
+.jumbotron{
+  min-width: 0!important;
+}
+.occasion-cards{
+  gap: 20px;
+  min-width: 0;
+}
+}

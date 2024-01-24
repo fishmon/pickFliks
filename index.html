@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pickFlix</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -32,10 +33,10 @@
                         </li>
                         <li class="nav-item">
                             <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-                            <label class="btn btn-outline-primary me-4 btn-toggle" for="btn-check-outlined">
+                            <label class="btn me-4 btn-toggle toggler" for="btn-check-outlined">
                                 <i class="fas fa-sun"></i> <!-- Light mode icon -->
                                 <i class="fas fa-moon"></i> <!-- Dark mode icon -->
-                                Toggle
+                                
                             </label>
                         </li>
                     </ul>
@@ -70,42 +71,41 @@
             <div class="container">   <!--this adds padding arround cards-->
                 <div class="row">   <!--This makes a row of cards-->
                     <div class="col-4">   <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                        <div class="card first-q-card">     <!--This is the card-->
+                      <a href="#" id="happy" class="mood-buttons">    
+                        <div class="card first-q-card justify-content-center">     <!--This is the card-->
+                            
                             <img src="./assets/images/kisspng-computer-icons-smiley-emoticon-happiness-clip-art-flat-faces-5b45a5b43521f2.9547669815312910602176.png" class="card-img-top mood-img happy-img" alt="...">
-                            <div class="card-body">
-                              <!-- <h5 class="card-title">Happy</h5> -->
-                              <!-- <p class="card-text">Choose this if you are in a good mood.</p> -->
-                              <a href="#" class="btn btn-primary mood-buttons" id="happy">Choose</a>
+                           
                             </div>
-                          </div>
+                          </a>
 
                     </div>
                     <div class="col-4">
-                        <div class="card first-q-card">
-                            <img src="./assets/images/neutral.jpg" class="card-img-top mood-img" alt="...">
-                            <div class="card-body">
-                              <!-- <h5 class="card-title">Neutral</h5>
-                              <p class="card-text">Choose this if you couldn't care less.</p> -->
-                              <a href="#" class="btn btn-primary mood-buttons" id="neutral">Choose</a>
-                            </div>
+                      <a href="#" id="neutral" class="mood-buttons">
+                        <div class="card first-q-card justify-content-center">
+                          
+                            <img src="./assets/images/neutral.png" class="card-img-top mood-img neutral-face" alt="...">
+                          
+                        
                           </div>
+                        </a>
                         
                     </div>
                     <div class="col-4">
-                        <div class="card first-q-card">
+                      <a href="#" id="sad" class="mood-buttons">
+                        <div class="card first-q-card justify-content-center">
+                          
                             <img src="./assets/images/kisspng-symbol-computer-icons-arrow-sad-emoji-5ac49d5631cd61.443182081522834774204.png" class="card-img-top mood-img" alt="...">
-                            <div class="card-body">
-                              <!-- <h5 class="card-title">Sad</h5>
-                              <p class="card-text">Choose this if you are sad.</p> -->
-                              <a href="#" class="btn btn-primary mood-buttons" id="sad">Choose</a>
-                            </div>
+
+                          
                           </div>
+                        </a>
                         
                     </div>
                 </div>
                 
             </div>
-            <a class="btn btn-primary btn-lg m-5 animated-button1" href="#" role="button" id="nextButton1">
+            <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton1">
               <span></span>
               <span></span>
               <span></span>
@@ -119,56 +119,64 @@
             <hr class="my-4">
 
             <div class="container"> <!--this adds padding arround cards-->
-              <div class="row"> <!--This makes a row of cards-->
-                <div class="col-3"> <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                  <div class="card customCard2Q m-auto"> <!--This is the card-->
-                    <img src="./assets/images/family.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Familly</h5>
-                      <p class="card-text">Choose this if you are watching with the familly.</p>
-                      <a href="#" class="btn btn-primary occasion-buttons" id="familly">Choose</a>
+              <div class="row occasion-cards"> <!--This makes a row of cards-->
+                <div class="col-md-3"> <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
+                  <a href="#" class="occasion-link" id="familly">
+                    <div class="card customCard2Q m-auto"> <!--This is the card-->
+                      <img src="./assets/images/family.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Familly</h5>
+                        <p class="card-text">Choose this if you are watching with the familly.</p>
+                        
+                      </div>
                     </div>
-                  </div>
+      </a>
     
                 </div>
-                <div class="col-3">
-                  <div class="card customCard2Q m-auto">
-                    <img src="./assets/images/alone.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Alone</h5>
-                      <p class="card-text">Choose this if you are watching it alone.</p>
-                      <a href="#" class="btn btn-primary occasion-buttons" id="alone">Choose</a>
+                <div class="col-md-3">
+                  <a href="#" class="occasion-link" id="alone">
+                    <div class="card customCard2Q m-auto">
+                      <img src="./assets/images/alone.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Alone</h5>
+                        <p class="card-text">Choose this if you are watching it alone.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="alone">Choose</a> -->
+                      </div>
                     </div>
-                  </div>
+                  </a>
     
                 </div>
-                <div class="col-3">
-                  <div class="card customCard2Q m-auto">
-                    <img src="./assets/images/datenight.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Date night</h5>
-                      <p class="card-text">Choose this if you are watching with your date.</p>
-                      <a href="#" class="btn btn-primary occasion-buttons" id="dateNight">Choose</a>
+                <div class="col-md-3">
+                  <a href="#" class="occasion-link" id="dateNight">
+                    <div class="card customCard2Q m-auto">
+                      <img src="./assets/images/datenight.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Date night</h5>
+                        <p class="card-text">Choose this if you are watching with your date.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="dateNight">Choose</a> -->
+                      </div>
                     </div>
-                  </div>
+                  </a>
     
                 </div>
-                <div class="col-3">
-                  <div class="card customCard2Q m-auto">
-                    <img src="./assets/images/nightWithFriends.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Movie night with friends</h5>
-                      <p class="card-text">Choose this if you are watching with your friends.</p>
-                      <a href="#" class="btn btn-primary occasion-buttons" id="friends">Choose</a>
+                <div class="col-md-3">
+                  <a href="#" class="occasion-link" id="dateNight">
+                    <div class="card customCard2Q m-auto">
+                      <img src="./assets/images/nightWithFriends.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Movie night with friends</h5>
+                        <p class="card-text">Choose this if you are watching with your friends.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="friends">Choose</a> -->
+                      </div>
                     </div>
-                  </div>
+                  </a>
     
                 </div>
     
               </div>
     
             </div>
-            <a class="btn btn-primary btn-lg m-5 animated-button1" href="#" role="button" id="nextButton2">
+            <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton2">
               <span></span>
               <span></span>
               <span></span>
@@ -197,12 +205,12 @@
             <input type="range" class="form-range" id="customRange1"> -->
 
            
-            <a class="btn btn-primary btn-lg m-5 animated-button1" href="#" role="button" id="nextButton3">
+            <a class="btn btn-primary btn-lg m-5 animated-button1 next-button" href="#" role="button" id="nextButton3">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Next</a>
+              Result</a>
           </div>
           <!--4rd Question section Awards or people's choice
 
@@ -302,10 +310,25 @@
     -->
       <!-- flip card section-->
       <div class="flip-container" id="resultsContainer">
+        <div class="media-container">
+          <div class="row media-row">
+            <div class="col-lg-4">
+              <img src="./assets/images/background3.jpg" class="img-fluid rounded-start poster1" alt="...">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title title1">Card title</h5>
+                <p class="card-text overview1"></p>
+                <br>
+                <p class="year1"></p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="flipper">
           <div class="front">
   
-            <div class="card mb-3" style="max-width: 1000px; height: 500px;">
+            <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="./assets/images/background3.jpg" class="img-fluid rounded-start poster1" alt="...">
@@ -323,7 +346,7 @@
           </div>
   
           <div class="back">
-            <div class="card mb-3" style="max-width: 1000px; height: 500px;">
+            <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="" class="img-fluid rounded-start poster2" alt="...">
@@ -346,15 +369,13 @@
     </div>
     </div>
     <div class="container container-about text-light" style="display: none;" id="about-section">
-      <h3 class="about-heading text-center">About us</h3>
+      <h3 class="about-heading">About us</h3>
       <hr>
-      <p class="about-p text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa sint officia dolore illum
-        ipsa, accusantium quis modi esse, quod odit nulla. Cumque, atque recusandae adipisci quaerat mollitia quam harum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis blanditiis sint dicta, accusantium corrupti
-        officia laudantium. Blanditiis, molestias magnam maxime suscipit nisi quasi vel, nemo minus officiis veniam
-        accusamus soluta?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore commodi similique ex? Aliquam
-        ipsam ratione quod praesentium consequuntur. Ipsum reiciendis dolorum molestias minima voluptatem, veniam eos.
-        Repellendus ullam ex voluptates!</p>
+      <p class="about-p">We are a trio dedicated to making your movie-watching experience delightful and stress-free.
+        At pickFlix, we believe in the magic of movies to transport us to different worlds, evoke emotions, and create lasting memories. Our mission is to simplify your movie choices, making every movie night a delightful experience.
+
+Whether you're in the mood for laughter, suspense, or heartwarming stories, we've got you covered. Join us on this cinematic journey, and let's discover incredible movies together!
+      </p>
     </div>
     <!-- Footer Section -->
     <footer class="mt-auto py-3 "> <!-- add class bg-light for light bg color-->

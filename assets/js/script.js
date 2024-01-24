@@ -101,9 +101,6 @@ $(document).ready(function () {
     };
     const tmdbApiKey = 'a45ae1cd50956721de8559fcdd0f36ac';
 
-
-    
-
     // Add a click event listener to the button and togle visibilty
     $toggleAboutButton.on('click', function() {
         // Toggle the visibility of the about me section
