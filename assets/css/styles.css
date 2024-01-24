@@ -129,20 +129,7 @@ color: var(--main-text-color);
     align-items: center;
     justify-content: center;
 }
-/* .btn-next{
-    width: 6em;
-    height: 3em;
-    background-color: #2B0808;
-    border: none;
-    color: white;
-    border-radius: none;
-    text-decoration: none;
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-} */
 .l-page-color {
     min-height: 300px;
     /* background-color: rgba(255, 233, 201, 0.7); */
@@ -243,22 +230,6 @@ input.customRangeSlider {
     padding-left: 50px;
     padding-right: 50px;;
 }
-/* #fourthQuestionJ {
-    min-width: 700px;
-    min-height: 400px;
-    border-radius: 10px;
-    background-color: rgba(255, 233, 201, 0.7);
-    margin-top: 100px;
-    display: none;
-}
-#fifthQuestionJ{
-  min-width: 700px;
-    min-height: 400px;
-    border-radius: 10px;
-    background-color: rgba(255, 233, 201, 0.7);
-    margin-top: 100px;
-    display: none;
-} */
 #containerSide {
     margin: auto;
 }
@@ -457,61 +428,19 @@ footer {
    
 
   }
-  /* #movieCard {
-    max-width: 800px;
-    max-height: 200px;
-
-  } */
-
   .back {
     background-color: var(--main-bg-color);
     border-radius: 10px;
 
     transform: rotateY(180deg);
   }
-/* end of css flip card */
-
-
-/* this is for the toggle light/dark mode  use class dark-mode */
-/* .dark-mode .navbar {
-    background-color: rgba(233, 45, 45, 0.048);
-
-}
-
-
-.dark-mode footer {
-  background-color: rgba(233, 45, 45, 0.048);
-
-} */
 .dark-mode .main-bg {
   background-image: url('../images/lightmode2.jpg');
-  /* background-size:cover; /* Cover the entire viewport 
-  background-position: center; /* Center the image 
-  background-repeat: no-repeat; /* Do not repeat the image 
-  width: 100%;
-  height: 100vh; */
 }
- /* .dark-mode #landingContainer{
-  background-color: rgba(233, 199, 199, 0.938);
-  color: rgb(10, 10, 10);
-
-}/*
-.dark-mode #firstQuestionJ {
-  background-color: rgba(233, 199, 199, 0.938);
-  color: rgb(10, 10, 10)
-
-}
-.dark-mode #secondQuestionJ {
-  background-color: rgba(233, 199, 199, 0.938);
-  color: rgb(10, 10, 10)
-
-}
-.dark-mode #thirdQuestionJ {
-  background-color: rgba(233, 199, 199, 0.938);
-  color: rgb(10, 10, 10)
-
-}
- */
+ footer{
+ 
+    height: 80px;
+ }
  .media-container{
   display: none;
  }
