@@ -25,9 +25,12 @@
 - **Mood Selection:** Start by selecting your current mood - Happy, Neutral, or Sad.
 - **Occasion:** Choose the occasion for watching the movie - Family, Alone, Date Night, etc.
 - **Decade Preference:** Slide to select the desired decade range for movie suggestions.
-- **Critic's choice or people's choice?:** Choose if you'd like to filter by people's choice or critics choice.
 - **Light/Dark Mode Toggle:** Switch between light and dark mode for a personalized viewing experience.
 - **Movie Recommendations:** Receive personalized movie recommendations based on your inputs.
+- **About me section:** Clicking on about button in the navbar will toggle display Hide/Show an about me section on the bottom of the page.
+- **Page reload:** Clicking on pickFlix in the navbar will refresh the page.
+
+
 
 ## Usage
 1. **Mood Selection:**
@@ -43,10 +46,6 @@
    - Use the slider to select your preferred decade for movie suggestions.
    - Click "Next" to proceed to the next question.
 
-4. **Critics or people's choice?:**
-   - Choose if you'd like to filter by people's choice or critics choice.
-   - Click "Next" to move to the final question.
-
 5. **Movie Recommendations:**
    - View personalized movie recommendations on the flip card based on the questions imputs.
    - The flip card shows the back with additional information.
@@ -57,6 +56,7 @@
 - Font Awesome v5.15.3
 - jQuery v3.6.4
 - The Movie Database (TMDb) API
+- Rotten Tomatoes API
 
 ## Installation
 
@@ -80,17 +80,17 @@
 2. Interact with the web app by answering the questions.
 3. Receive personalized movie recommendations on the flip card.
 
-## Screenshots
+## Demonstration
 
-![pickFlix Screenshot](placeholder)
+![pickFlix Screenshot](./assets/images/screen-capture.gif)
 
 ## Deployed Application
 
-The live version of the application can be accessed [here](placeholder live website).
+The live version of the application can be accessed [here](https://fishmon.github.io/pickFlix/).
 
 ## Repository
 
-The source code is hosted on GitHub. You can find the repository [here](placeholder git repo).
+The source code is hosted on GitHub. You can find the repository [here](https://github.com/fishmon/pickFlix).
 
 
 ## Acknowledgments
