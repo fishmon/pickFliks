@@ -68,6 +68,8 @@ function populateCard1(data){
     $('.title1').text(data.original_title);
     $('.overview1').text(data.overview);
     $('.year1').text("Release date: "+data.release_date);
+    omdbRottenTomatoes(data.original_title)
+
 }
 
 function populateCard2(data){
@@ -76,4 +78,15 @@ function populateCard2(data){
     $('.title2').text(data.original_title);
     $('.overview2').text(data.overview);
     $('.year2').text("Release date: "+data.release_date);
+    omdbRottenTomatoes(data.original_title)
+}
+function omdbRottenTomatoes(title) {
+    const omdbUrl = `https://www.omdbapi.com/?t=${title}&apikey=trilogy`
+    fetch(omdbUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            $('.tomatoes-score').text(" " + data.Ratings[1].Value)
+        });
 }
