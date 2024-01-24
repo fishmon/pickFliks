@@ -1,305 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pickFlix</title>
-    <link rel="icon" href="./assets/images/film_roll_icon.png" type="image/x-icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- CSS-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pickFlix</title>
+  <link rel="icon" href="./assets/images/film_roll_icon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CSS-->
+  <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <!-- Bootstrap CSS -  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap CSS -  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Font Awesome - for additional icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Font Awesome - for additional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar navbar-expand-lg "> <!-- add navbar-light bg-light  to class to use boostrap-->
-            <div class="container-fluid ps-3 pe-3">
-                <a class="navbar-brand ms-4 me-5" href="#" id="brandText" >PICKFLIX</a>
-                <!--this is the screen responsive toggle menu-->
-                <button class="navbar-toggler ms-auto me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-section" id="toggleAboutButton">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-                            <label class="btn me-4 btn-toggle toggler" for="btn-check-outlined">
-                                <i class="fas fa-sun"></i> <!-- Light mode icon -->
-                                <i class="fas fa-moon"></i> <!-- Dark mode icon -->
-                                
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-<div class="main-bg">
-    <!--  -->
+  <!-- Header Section -->
+  <header>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid ps-3 pe-3">
+        <a class="navbar-brand ms-4 me-5" href="#" id="brandText">PICKFLIX</a>
+        <!--this is the screen responsive toggle menu-->
+        <button class="navbar-toggler ms-auto me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section" id="toggleAboutButton">About</a>
+            </li>
+            <li class="nav-item">
+              <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+              <label class="btn me-4 btn-toggle toggler" for="btn-check-outlined">
+                <i class="fas fa-sun"></i> <!-- Light mode icon -->
+                <i class="fas fa-moon"></i> <!-- Dark mode icon -->
+
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="main-bg">
+    <!-- main container -->
     <div class="container flex-grow-1" id="containerSide">
-        <!-- Landing first section jumbo-->
-        <div class="jumbotron text-center l-page-color " id="landingContainer">
-            <h1 class="display-4">Howdy!</h1>
-            <p class="lead">Welcome to our website. We know you're bored and lazy, otherwise you'd be googling for movie sugestions.</p>
-            <!-- <hr class="my-4"> --> <!--This adds a line in the landing container separating text-->
-            <p>Follow the instructions, respond to questions and when ready, press the big button bellow..</p>
-            <a href="#" class="animated-button1" id="startButton">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Start Now
-            </a>
+      <!-- Landing first section jumbo-->
+      <div class="jumbotron text-center l-page-color " id="landingContainer">
+        <h1 class="display-4">Howdy!</h1>
+        <p class="lead">Welcome to our website. We know you're bored and lazy, otherwise you'd be googling for movie
+          sugestions.</p>
+        <!-- <hr class="my-4"> --> <!--This adds a line in the landing container separating text-->
+        <p>Follow the instructions, respond to questions and when ready, press the big button bellow..</p>
+        <a href="#" class="animated-button1" id="startButton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Start Now
+        </a>
+      </div>
+
+      <!-- First question jumbo-->
+      <div class="jumbotron text-center " id="firstQuestionJ">
+        <h1 class="display-4">1st Question</h1>
+        <p class="lead">How do you feel today? </p>
+        <hr class="my-4">
+
+        <div class="container"> <!--this adds padding arround cards-->
+          <div class="row"> <!--This makes a row of cards-->
+            <!-- happy face card -->
+            <div class="col-4"> 
+              <!-- link wraps the div to make it clickable -->
+              <a href="#" id="happy" class="mood-buttons">
+                <div class="card first-q-card justify-content-center"> <!--This is the card-->
+                  <img
+                    src="./assets/images/kisspng-computer-icons-smiley-emoticon-happiness-clip-art-flat-faces-5b45a5b43521f2.9547669815312910602176.png"
+                    class="card-img-top mood-img happy-img" alt="...">
+                </div>
+              </a>
+
+            </div>
+            <!-- neutral face card -->
+            <div class="col-4">
+              <a href="#" id="neutral" class="mood-buttons">
+                <div class="card first-q-card justify-content-center">
+                  <img src="./assets/images/neutral.png" class="card-img-top mood-img neutral-face" alt="...">
+                </div>
+              </a>
+
+            </div>
+            <!-- sad face card -->
+            <div class="col-4">
+              <a href="#" id="sad" class="mood-buttons">
+                <div class="card first-q-card justify-content-center">
+                  <img
+                    src="./assets/images/kisspng-symbol-computer-icons-arrow-sad-emoji-5ac49d5631cd61.443182081522834774204.png"
+                    class="card-img-top mood-img" alt="...">
+                </div>
+              </a>
+
+            </div>
+          </div>
+
         </div>
-
-        <!-- First question jumbo-->
-        <div class="jumbotron text-center " id="firstQuestionJ">
-            <h1 class="display-4">1st Question</h1>
-            <p class="lead">How do you feel today? </p>
-            <hr class="my-4">
-
-            <div class="container">   <!--this adds padding arround cards-->
-                <div class="row">   <!--This makes a row of cards-->
-                    <div class="col-4">   <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                      <a href="#" id="happy" class="mood-buttons">    
-                        <div class="card first-q-card justify-content-center mood-buttons">     <!--This is the card-->
-                            
-                            <img src="./assets/images/kisspng-computer-icons-smiley-emoticon-happiness-clip-art-flat-faces-5b45a5b43521f2.9547669815312910602176.png" class="card-img-top mood-img happy-img" alt="...">
-                           
-                            </div>
-                          </a>
-
-                    </div>
-                    <div class="col-4">
-                      <a href="#" id="neutral" class="mood-buttons">
-                        <div class="card first-q-card justify-content-center">
-                          
-                            <img src="./assets/images/neutral.png" class="card-img-top mood-img neutral-face" alt="...">
-                          
-                        
-                          </div>
-                        </a>
-                        
-                    </div>
-                    <div class="col-4">
-                      <a href="#" id="sad" class="mood-buttons">
-                        <div class="card first-q-card justify-content-center">
-                          
-                            <img src="./assets/images/kisspng-symbol-computer-icons-arrow-sad-emoji-5ac49d5631cd61.443182081522834774204.png" class="card-img-top mood-img" alt="...">
-
-                          
-                          </div>
-                        </a>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton1">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Next</a>
-          </div>
-          <!-- Second question Container-->
-          <div class="jumbotron text-center " id="secondQuestionJ">
-            <h1 class="display-4">2nd Question</h1>
-            <p class="lead">What is the occasion? </p>
-            <hr class="my-4">
-
-            <div class="container"> <!--this adds padding arround cards-->
-              <div class="row occasion-cards"> <!--This makes a row of cards-->
-                <div class="col-md-3"> <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
-                  <a href="#" class="occasion-link" id="familly">
-                    <div class="card customCard2Q m-auto"> <!--This is the card-->
-                      <img src="./assets/images/family.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Familly</h5>
-                        <p class="card-text">Choose this if you are watching with the familly.</p>
-                        
-                      </div>
-                    </div>
-      </a>
-    
-                </div>
-                <div class="col-md-3">
-                  <a href="#" class="occasion-link" id="alone">
-                    <div class="card customCard2Q m-auto">
-                      <img src="./assets/images/alone.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Alone</h5>
-                        <p class="card-text">Choose this if you are watching it alone.</p>
-                        <!-- <a href="#" class="btn btn-primary" id="alone">Choose</a> -->
-                      </div>
-                    </div>
-                  </a>
-    
-                </div>
-                <div class="col-md-3">
-                  <a href="#" class="occasion-link" id="dateNight">
-                    <div class="card customCard2Q m-auto">
-                      <img src="./assets/images/datenight.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Date night</h5>
-                        <p class="card-text">Choose this if you are watching with your date.</p>
-                        <!-- <a href="#" class="btn btn-primary" id="dateNight">Choose</a> -->
-                      </div>
-                    </div>
-                  </a>
-    
-                </div>
-                <div class="col-md-3">
-                  <a href="#" class="occasion-link" id="dateNight">
-                    <div class="card customCard2Q m-auto">
-                      <img src="./assets/images/nightWithFriends.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Movie night with friends</h5>
-                        <p class="card-text">Choose this if you are watching with your friends.</p>
-                        <!-- <a href="#" class="btn btn-primary" id="friends">Choose</a> -->
-                      </div>
-                    </div>
-                  </a>
-    
-                </div>
-    
-              </div>
-    
-            </div>
-            <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton2">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Next</a>  
-          </div>
-          
-          </div>
-          <!-- Third question section slider -->
-          <div class="jumbotron text-center " id="thirdQuestionJ">
-            <h1 class="display-4">3rd question</h1>
-            <p class="lead">How old do you want the movies to be?</p>
-            <!-- <hr class="my-4"> -->
-            <label for="customRange3" class="form-label customRange">Move the slider to the desired decade!</label>
-        <input type="range" class="form-range customRangeSlider" min="0" max="4" step="1.0" id="customRange3">
-        <div class="range-box">
-          <span class="range-80">80'</span>
-          <span class="range-90">90'</span>
-          <span class="range-00">2000</span>
-          <span class="range-10">2010</span>
-          <span class="range-current">current</span>
-        </div>
-           
-            <a class="btn btn-primary btn-lg m-5 animated-button1 next-button" href="#" role="button" id="nextButton3">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Result</a>
-          </div>
-      <!-- flip card section-->
-      <div class="flip-container container-fluid" id="resultsContainer">
-        <div class="media-container">
-          <div class="row media-row">
-            <div class="col-lg-4">
-              <img src="./assets/images/background3.jpg" class="img-fluid rounded-start poster1" alt="...">
-            </div>
-            <div class="col-lg-8">
-              <div class="card-body">
-                <h5 class="card-title title1">Card title</h5>
-                <p class="card-text overview1"></p>
-                <br>
-                <p class="year1"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flipper">
-          <div class="front">
-  
-            <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="" class="img-fluid rounded-start poster1" alt="...">
-                </div>
-                <div class="col-md-8">
+        <!-- next button -->
+        <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next</a>
+      </div>
+      <!-- Second question Container-->
+      <div class="jumbotron text-center " id="secondQuestionJ">
+        <h1 class="display-4">2nd Question</h1>
+        <p class="lead">What is the occasion? </p>
+        <hr class="my-4">
+        <div class="container"> <!--this adds padding arround cards-->
+          <div class="row occasion-cards"> <!--This makes a row of cards-->
+            <!-- occasion - family -->
+            <div class="col-md-3"> <!--This divides 12 spaces into 4 units allowing the cards to sit in a row-->
+              <a href="#" class="occasion-link" id="familly">
+                <div class="card customCard2Q m-auto"> <!--This is the card-->
+                  <img src="./assets/images/family.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title title1">Card title</h5>
-                    <p class="card-text overview1"></p>
-                    <br>
-                    <p class="year1"></p>
-                    <h4 class="rotten-tomatoes">Rotten Tomatoes</h4>
-                    <img src="./assets/images/Tomato_icon.png" class="tomato-icon"></img><span
-                      class="tomatoes-score1"></span>
+                    <h5 class="card-title">Family</h5>
+                    <p class="card-text">Choose this if you are watching with the family.</p>
                   </div>
                 </div>
+              </a>
+            </div>
+            <!-- occasion - alone  -->
+            <div class="col-md-3">
+              <a href="#" class="occasion-link" id="alone">
+                <div class="card customCard2Q m-auto">
+                  <img src="./assets/images/alone.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Alone</h5>
+                    <p class="card-text">Choose this if you are watching it alone.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- occasion - date night -->
+            <div class="col-md-3">
+              <a href="#" class="occasion-link" id="dateNight">
+                <div class="card customCard2Q m-auto">
+                  <img src="./assets/images/datenight.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Date night</h5>
+                    <p class="card-text">Choose this if you are watching with your date.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- occasion - movie night with friends -->
+            <div class="col-md-3">
+              <a href="#" class="occasion-link" id="dateNight">
+                <div class="card customCard2Q m-auto">
+                  <img src="./assets/images/nightWithFriends.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Movie night with friends</h5>
+                    <p class="card-text">Choose this if you are watching with your friends.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- next button -->
+        <a class="btn btn-primary btn-lg m-4 animated-button1 next-button" href="#" role="button" id="nextButton2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next</a>
+      </div>
+
+    </div>
+    <!-- Third question section slider -->
+    <div class="jumbotron text-center " id="thirdQuestionJ">
+      <h1 class="display-4">3rd question</h1>
+      <p class="lead">How old do you want the movies to be?</p>
+      <label for="customRange3" class="form-label customRange">Move the slider to the desired decade!</label>
+      <!-- bootstrap range input -->
+      <input type="range" class="form-range customRangeSlider" min="0" max="4" step="1.0" id="customRange3">
+      <div class="range-box">
+        <span class="range-80">80'</span>
+        <span class="range-90">90'</span>
+        <span class="range-00">2000</span>
+        <span class="range-10">2010</span>
+        <span class="range-current">current</span>
+      </div>
+<!-- result button -->
+      <a class="btn btn-primary btn-lg m-5 animated-button1 next-button" href="#" role="button" id="nextButton3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Result</a>
+    </div>
+    <!-- flip card section-->
+    <div class="flip-container container-fluid" id="resultsContainer">
+      <div class="media-container">
+        <div class="row media-row">
+          <div class="col-lg-4">
+            <img src="./assets/images/background3.jpg" class="img-fluid rounded-start poster1" alt="...">
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h5 class="card-title title1">Card title</h5>
+              <p class="card-text overview1"></p>
+              <br>
+              <p class="year1"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flipper">
+        <!-- front flipper -->
+        <div class="front">
+          <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="" class="img-fluid rounded-start poster1" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title title1">Card title</h5>
+                  <p class="card-text overview1"></p>
+                  <br>
+                  <p class="year1"></p>
+                  <h4 class="rotten-tomatoes">Rotten Tomatoes</h4>
+                  <img src="./assets/images/Tomato_icon.png" class="tomato-icon"></img><span
+                    class="tomatoes-score1"></span>
+                </div>
               </div>
             </div>
           </div>
-  
-          <div class="back">
-            <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="" class="img-fluid rounded-start poster2" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title title2"></h5>
-                    <p class="card-text overview2"></p>
-                    <br>
-                    <p class="year2"></p>
-                    <h4 class="rotten-tomatoes">Rotten Tomatoes</h4>
-                    <img src="./assets/images/Tomato_icon.png" class="tomato-icon"></img><span
-                      class="tomatoes-score2"></span>
-                  </div>
+        </div>
+<!-- back flipper -->
+        <div class="back">
+          <div class="card flip-card mb-3" style="max-width: 1000px; height: 500px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="" class="img-fluid rounded-start poster2" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title title2"></h5>
+                  <p class="card-text overview2"></p>
+                  <br>
+                  <p class="year2"></p>
+                  <h4 class="rotten-tomatoes">Rotten Tomatoes</h4>
+                  <img src="./assets/images/Tomato_icon.png" class="tomato-icon"></img><span
+                    class="tomatoes-score2"></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
-    </div>
-    <div class="container container-about text-light" style="display: none;" id="about-section">
-      <h3 class="about-heading">About us</h3>
-      <hr>
-      <p class="about-p">We are a trio dedicated to making your movie-watching experience delightful and stress-free.
-        At pickFlix, we believe in the magic of movies to transport us to different worlds, evoke emotions, and create lasting memories. Our mission is to simplify your movie choices, making every movie night a delightful experience.
+  </div>
+  </div>
+  <!-- about container -->
+  <div class="container container-about text-light" style="display: none;" id="about-section">
+    <h3 class="about-heading">About us</h3>
+    <hr>
+    <p class="about-p">We are a trio dedicated to making your movie-watching experience delightful and stress-free.
+      At pickFlix, we believe in the magic of movies to transport us to different worlds, evoke emotions, and create
+      lasting memories. Our mission is to simplify your movie choices, making every movie night a delightful experience.
 
-Whether you're in the mood for laughter, suspense, or heartwarming stories, we've got you covered. Join us on this cinematic journey, and let's discover incredible movies together!
-      </p>
+      Whether you're in the mood for laughter, suspense, or heartwarming stories, we've got you covered. Join us on this
+      cinematic journey, and let's discover incredible movies together!
+    </p>
+  </div>
+  <!-- Footer Section -->
+  <footer class="mt-auto py-3 "> <!-- add class bg-light for light bg color-->
+    <div class="container text-center">
+      <p>&copy; 2024 pickFlix. All Rights Reserved.</p>
     </div>
-    <!-- Footer Section -->
-    <footer class="mt-auto py-3 "> <!-- add class bg-light for light bg color-->
-        <div class="container text-center">
-            <p>&copy; 2024 pickFlix. All Rights Reserved.</p>
-        </div>
-    </footer>
+  </footer>
 
-    <!-- Bootstrap JS and Popper.js -  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!--custom JavaScript file -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/infoApi.js"></script>
-    <script src="./assets/js/functions.js"></script>
+  <!-- Bootstrap JS and Popper.js -  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--custom JavaScript file -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/infoApi.js"></script>
+  <script src="./assets/js/functions.js"></script>
 
 
 </body>
+
 </html>
