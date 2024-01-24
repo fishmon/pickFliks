@@ -6,9 +6,9 @@ let certificationInput;
 let decadesInput;
 
 // get mood input
-$('.mood-buttons').on('click', function(){    
+        $('.mood-buttons').on('click', function(){    
      // Clear the content of all mood-cards
-         $('.mood-buttons').css('border', 'none');
+     $('.mood-buttons').css('border', 'none');
       // Set the content of the clicked card
       $(this).css('border', '1px solid black');
       moodInput = $(this).attr('id')});
