@@ -14,6 +14,7 @@ $('.mood-buttons').on('click', function(){
     
     // Store the ID 
     moodInput = $(this).attr('id');
+    nextButton1.show();
 });
 
 //same method for occasion question
@@ -21,6 +22,8 @@ $('.occasion-buttons').on('click', function(){
     $('.occasion-buttons').css('border', '1px solid black');
     $(this).css('border', '4px solid #3D0B0B');
     certificationInput = $(this).attr('id')
+    nextButton2.show()
+    
 })
 
 // stores value (index)
