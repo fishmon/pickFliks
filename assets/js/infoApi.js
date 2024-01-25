@@ -11,6 +11,8 @@ const discover = {
     year: "&primary_release_year=",
     genre: "&with_genres=",
 }
+
+//variables to get input from user
 const moodCategories = {
     happy: '35|10751|16|12|10749|10402',
     neutral: '28|12|35|18|10751|16|80|99|9648|10749|878|53|10752]',
@@ -23,7 +25,6 @@ const certificationList = {
     friends: 'PG-16',
     kidsParty: 'G'
 }
-
 const decades = [
     ["1980-01-01","1989-01-01"],
     ["1990-01-01","1999-01-01"],
@@ -31,6 +32,8 @@ const decades = [
     ["2010-01-01","2019-01-01"],
     ["2020-01-01", start = new Date().getFullYear() + "-12-31"]
 ]
+
+//authentication method
 const options = {
     method: 'GET',
     headers: {
@@ -39,4 +42,5 @@ const options = {
     }
 };
 
+//url for Posters
 const posterUrl = "https://image.tmdb.org/t/p/original"
